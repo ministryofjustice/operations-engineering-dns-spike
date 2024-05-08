@@ -21,7 +21,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m venv venv
-        source env/bin/activate
+        source venv/bin/activate
         pip install -f requirements.txt
 
     - name: Run OctoDNS dry run
