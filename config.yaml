@@ -1,0 +1,16 @@
+providers:
+  config:
+    class: octodns.provider.yaml.YamlProvider
+    directory: ./config   # directory where your YAML files are located
+    default_ttl: 300      # default TTL for records
+  route53:
+    class: octodns.provider.route53.Route53Provider
+    access_key_id: env/AWS_ACCESS_KEY_ID     # AWS Access Key ID
+    secret_access_key: env/AWS_SECRET_ACCESS_KEY # AWS Secret Access Key
+
+zones:
+  dns-test.service.justice.gov.uk.:
+    sources:
+      - config
+    targets:
+      - route53
