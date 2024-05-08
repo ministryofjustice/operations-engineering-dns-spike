@@ -1,6 +1,7 @@
 name: OctoDNS Dry Run
 
 on:
+  workflow_dispatch:
   pull_request:
     branches:
       - main
