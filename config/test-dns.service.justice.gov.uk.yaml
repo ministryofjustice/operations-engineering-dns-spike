@@ -1,9 +1,5 @@
 ---
-test-dns.service.justice.gov.uk.:
-  - type: A
-    ttl: 300
-    value: 203.0.113.101  # Placeholder IP, not actively used in this example.
 demo:
-  - type: CNAME
-    ttl: 300
-    value: example.com.
+  ttl: 300
+  type: CNAME
+  value: example.com.
