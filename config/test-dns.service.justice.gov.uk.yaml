@@ -1,8 +1,6 @@
 ---
 '':
   - octodns:
-      route53:
-        health_check: 12345-abcdef
     ttl: 300
     type: CNAME
     value: example.com.
