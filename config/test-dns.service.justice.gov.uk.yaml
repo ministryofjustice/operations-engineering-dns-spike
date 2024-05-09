@@ -4,7 +4,7 @@
       route53:
         health_check: 12345-abcdef
     ttl: 300
-    type: A
+    type: CNAME
     value: example.com.
   - octodns:
       route53:
