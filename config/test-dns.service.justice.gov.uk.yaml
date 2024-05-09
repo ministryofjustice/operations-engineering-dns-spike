@@ -1,7 +1,6 @@
 ---
 '':
   - type: CNAME
-    ttl: 300
     value: example.com.
   - octodns:
       route53:
