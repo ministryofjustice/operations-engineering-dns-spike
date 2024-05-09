@@ -1,50 +1,56 @@
 ---
-demo:
+'':
+  - octodns:
+      route53:
+        health_check: "12345-abcdef"
+    ttl: 300
+    type: A
+    value: 194.195.247.228
+
+  - octodns:
+      route53:
+        health_check: "54321-fedcba"
+    ttl: 300
+    type: MX
+    values:
+      - exchange: amir.mx.route53.net.
+        preference: 19
+      - exchange: linda.mx.route53.net.
+        preference: 40
+      - exchange: isaac.mx.route53.net.
+        preference: 65
+
+  - octodns:
+      route53:
+        health_check: "abc123-xyz987"
+    ttl: 300
+    type: TXT
+    values:
+      - "google-site-verification=2-WR3alaLn7r-_pRPyYZhnh0YYYe4Bbydo32bfg4Wxo"
+      - "google-site-verification=cdfwmXlZDb57NUuy_1EOSrxfEYAYp_P232bOkrWVudM"
+      - "keybase-site-verification=PeSqpPFVIy3W-YQWurEKeawYsgbH6QUjhDvf9mN3FdU"
+      - "v=spf1 include:_spf.route53.net ~all"
+
+6ed7202cfcfe199921d5b382e200a40e598d20c3.status:
+  octodns:
+      route53:
+        health_check: "789xyz-654321"
   ttl: 300
   type: CNAME
-  value: example.com.
+  value: 0413e56329e93dfd18eed87f6a0566abfdc4fedb.fsverify.freshstatus.io.
 
-a-record-1:
-  ttl: 300
-  type: A
-  value: 192.0.2.1
-
-a-record-2:
-  ttl: 300
-  type: A
-  value: 192.0.2.2
-
-a-record-50:
-  ttl: 300
-  type: A
-  value: 192.0.2.50
-
-cname-record-1:
-  ttl: 300
-  type: CNAME
-  value: example.com.
-
-cname-record-2:
-  ttl: 300
-  type: CNAME
-  value: example.net.
-
-cname-record-25:
-  ttl: 300
-  type: CNAME
-  value: example.org.
-
-txt-record-1:
+_dmarc:
+  octodns:
+      route53:
+        health_check: "def456-ghi789"
   ttl: 300
   type: TXT
-  value: "This is a test TXT record."
+  value: "v=DMARC1\; p=none\; rua=mailto:d043664dc3c6459586f31b10d86a37b7@dmarc-reports.route53.net"
 
-txt-record-2:
+alertmanager:
+  octodns:
+      route53:
+        health_check: "xyz789-abc654"
   ttl: 300
-  type: TXT
-  value: "Another example TXT record."
-
-txt-record-25:
-  ttl: 300
-  type: TXT
-  value: "Final example TXT record."
+  type: A
+  value: 194.195.247.228
