@@ -1,5 +1,0 @@
----
-www:
-  ttl: 300
-  type: CNAME
-  value: reports.cloud-platform.service.justice.gov.uk.

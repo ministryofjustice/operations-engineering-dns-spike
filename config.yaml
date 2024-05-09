@@ -9,7 +9,7 @@ providers:
     secret_access_key: env/AWS_SECRET_ACCESS_KEY
 
 zones:
-  dns-test.service.justice.gov.uk.:
+  test-dns.service.justice.gov.uk.:
     sources:
       - config
     targets:
