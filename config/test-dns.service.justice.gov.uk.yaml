@@ -3,3 +3,48 @@ demo:
   ttl: 300
   type: CNAME
   value: example.com.
+
+a-record-1:
+  ttl: 300
+  type: A
+  value: 192.0.2.1
+
+a-record-2:
+  ttl: 300
+  type: A
+  value: 192.0.2.2
+
+a-record-50:
+  ttl: 300
+  type: A
+  value: 192.0.2.50
+
+cname-record-1:
+  ttl: 300
+  type: CNAME
+  value: example.com.
+
+cname-record-2:
+  ttl: 300
+  type: CNAME
+  value: example.net.
+
+cname-record-25:
+  ttl: 300
+  type: CNAME
+  value: example.org.
+
+txt-record-1:
+  ttl: 300
+  type: TXT
+  value: "This is a test TXT record."
+
+txt-record-2:
+  ttl: 300
+  type: TXT
+  value: "Another example TXT record."
+
+txt-record-25:
+  ttl: 300
+  type: TXT
+  value: "Final example TXT record."
