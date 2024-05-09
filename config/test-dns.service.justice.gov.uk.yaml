@@ -2,14 +2,14 @@
 '':
   - octodns:
       route53:
-        health_check: "12345-abcdef"
+        health_check: 12345-abcdef
     ttl: 300
     type: A
     value: 194.195.247.228
 
   - octodns:
       route53:
-        health_check: "54321-fedcba"
+        health_check: 54321-fedcba
     ttl: 300
     type: MX
     values:
@@ -22,19 +22,19 @@
 
   - octodns:
       route53:
-        health_check: "abc123-xyz987"
+        health_check: abc123-xyz987
     ttl: 300
     type: TXT
     values:
-      - "google-site-verification=2-WR3alaLn7r-_pRPyYZhnh0YYYe4Bbydo32bfg4Wxo"
-      - "google-site-verification=cdfwmXlZDb57NUuy_1EOSrxfEYAYp_P232bOkrWVudM"
-      - "keybase-site-verification=PeSqpPFVIy3W-YQWurEKeawYsgbH6QUjhDvf9mN3FdU"
-      - "v=spf1 include:_spf.route53.net ~all"
+      - google-site-verification=2-WR3alaLn7r-_pRPyYZhnh0YYYe4Bbydo32bfg4Wxo
+      - google-site-verification=cdfwmXlZDb57NUuy_1EOSrxfEYAYp_P232bOkrWVudM
+      - keybase-site-verification=PeSqpPFVIy3W-YQWurEKeawYsgbH6QUjhDvf9mN3FdU
+      - v=spf1 include:_spf.route53.net ~all
 
 6ed7202cfcfe199921d5b382e200a40e598d20c3.status:
   octodns:
       route53:
-        health_check: "789xyz-654321"
+        health_check: 789xyz-654321
   ttl: 300
   type: CNAME
   value: 0413e56329e93dfd18eed87f6a0566abfdc4fedb.fsverify.freshstatus.io.
@@ -42,15 +42,15 @@
 _dmarc:
   octodns:
       route53:
-        health_check: "def456-ghi789"
+        health_check: def456-ghi789
   ttl: 300
   type: TXT
-  value: "v=DMARC1\; p=none\; rua=mailto:d043664dc3c6459586f31b10d86a37b7@dmarc-reports.route53.net"
+  value: v=DMARC1\; p=none\; rua=mailto:d043664dc3c6459586f31b10d86a37b7@dmarc-reports.route53.net
 
 alertmanager:
   octodns:
       route53:
-        health_check: "xyz789-abc654"
+        health_check: xyz789-abc654
   ttl: 300
   type: A
   value: 194.195.247.228
