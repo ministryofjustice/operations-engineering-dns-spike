@@ -54,3 +54,11 @@ alertmanager:
   ttl: 300
   type: A
   value: 194.195.247.228
+
+prometheus:
+  octodns:
+      route53:
+        health_check: xyz789-abc655
+  ttl: 300
+  type: A
+  value: 194.195.247.229
